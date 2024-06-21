@@ -69,7 +69,7 @@ additionals are
 
 ## what are the main blocks in this Single cycle processor?
 The RISC-V contains the four essential blocks,
-#### ‣ Program Counter (PC)
+#### ‣ [Program Counter](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Program%20Counter)
 #### ‣ Instruction Memory
 #### ‣ Register File
 #### ‣ Data Memory
