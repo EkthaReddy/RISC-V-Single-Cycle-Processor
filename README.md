@@ -31,7 +31,7 @@ The RISC-V contains the four essential blocks,
 #### ‣ [Program Counter](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Program%20Counter)
 #### ‣ [Instruction Memory](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Instruction%20Memory)
 #### ‣ [Register File](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Register%20File)
-#### ‣ Data Memory
+#### ‣ [Data Memory](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Data%20Memory)
 This four blocks are the key componenets of the processor. But, to bluid the whole architecture it is not enough, you need the connecting components for the above which plays a greater role in selecting the data, to ensure data is being read or written to we need,
 #### ‣ Multiplexers - 3 are required
 The count is 3, for selecting their desired selection line which are PCSrc, ALUSrc, Memwrite
