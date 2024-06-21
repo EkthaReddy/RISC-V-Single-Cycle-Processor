@@ -6,11 +6,66 @@ In this repository of RISC-V, you will get to know the main modules of the MIPS 
 Xilinx Vivado version 2023.1
 This is an industry level tool, which will produce the gate level design, schematic design and it can also implement the code in an FPGA kit by using bitstream generation.
 
+## What to expect
+The instruction I-type, B-type, S-type snd J-type have been proposed. 
+This repository will picture out the main idea on various main block of RISC-V along with the excecution of each module in vivado.
+
+
 ## Architecture Design
+
 ![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/a96949c0-6e89-426c-97c5-8d158f3afae8)
 
-## What I did
-The instruction I-type, B-type, S-type snd J-type have been proposed. 
+## Instruction Set
+
+![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/e5042813-b772-4bf1-a8a8-44d33539c6b8)
+
+## ALU Table
+
+![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/9b26d4e0-50c2-43be-aef5-47effa00f8ff)
+
+
+
+## What is happening in load word, store word, and Branch equal word
+
+### Load Word
+Step 1: The type of instruction used will determine the path for data to flow. To explain in simpler ways, the data will follow a path from the program counter at an initial address let's take 1000. It will give the instruction in machine code language after being fed into the isnstruction Memory.
+
+
+Step 2: The opcode and instruction used will excute path in a certain direction. To know which path to choose the multiplexer is been placed.
+
+
+Step 3:The sourse register from instruction set is fed into the register file at source operand A1(for single source register) which now gives us SrcA. For SrcB, Adding the extend file which will convert the small bits to 32 bit wide.
+
+Note: If two single source register are used then, both A1 and A2 source operand are used.
+
+
+Step 4: The SrcA and SrcB will be computed in ALU Logice where it comprise of Main Decoder and ALU Decoder which is being controlled by ALU Controller.
+
+
+Step 5: The ALUResult is fed into the Data memory and where the Result is added back to the Register File of WD3. RegWrite is added as a control signal to ALU Controller.
+Now, we need the next instruction to pass on, the adder is used which gives output as PCPlus4 which addes the previous input with four.
+
+
+### Store word
+Step 1: The whole structure of store word is almost same like the load word. 
+The changes to be made are 
+- Two single source register is used.
+- ImmSrc from from extend file and MemWrite from the Data memory as a control signal is supplied to the ALU Controller.
+- Second Register is fed into the A2 source operand.
+
+### Branch Equal
+
+Follow the same data path till store word.
+additionals are
+
+- Perform substraction operation on SrcA and SrcB, if the result gives us zerothen add zero flag to show the results are obtained for beq instructions.
+- ResultSrc and RD is disabled.
+- Calcualte the Target Address 
+  PCTarget = PC input + ImmExt
+  the PCTarget is fed into the Program Counter by using multipler which 
+
+
+
 
 ## what are the main blocks in this Single cycle processor?
 The RISC-V contains the four essential blocks,
@@ -31,7 +86,7 @@ The adder will increment the value. For PCPlus4 the previous input is added with
 #### ‣ Datapath
 
 All this combined together with the appropriate logic flow will give the architecture of MIPS.
-## What to expect from this repository?
+## What does the repository contain?
 
 You can expect four things which will be given for every modules 
 ### Verilog Code: 
