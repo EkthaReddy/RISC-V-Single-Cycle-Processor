@@ -53,15 +53,15 @@ All this combined together with the appropriate logic flow will give the archite
 Step 1: The type of instruction used will determine the path for data to flow. To explain in simpler ways, the data will follow a path from the program counter at an initial address let's take 1000. It will give the instruction in machine code language after being fed into the instruction Memory.
 
 
-Step 2: The opcode and instruction used will excute path in a certain direction. To know which path to choose the multiplexer is been placed.
+Step 2: The opcode and instruction used will excute path in a certain direction. To know which path to choose, the multiplexer is been placed.
 
 
-Step 3:The sourse register from instruction set is fed into the register file at source operand A1(for single source register) which now gives us SrcA. For SrcB, Adding the extend file which will convert the small bits to 32 bit wide.
+Step 3:The sourse register from instruction set is fed into the register file at source operand A1(for single source register) which now gives us SrcA. For SrcB, add the extend file which will convert the small bits to 32 bit wide.
 
-Note: If two single source register are used then, both A1 and A2 source operand are used.
+Note: If two single source register are used then both A1 and A2 source operand are used.
 
 
-Step 4: The SrcA and SrcB will be computed in ALU Logice where it comprise of Main Decoder and ALU Decoder which is being controlled by ALU Controller.
+Step 4: The SrcA and SrcB will be computed in ALU Logice where it comprise of Main Decoder and ALU Decoder which are controlled by ALU Controller.
 
 
 Step 5: The ALUResult is fed into the Data memory and where the Result is added back to the Register File of WD3. RegWrite is added as a control signal to ALU Controller.
@@ -90,16 +90,12 @@ additionals are
 
 ## What does the repository contain?
 
-You can expect four things which will be given for every modules 
+You can expect four things which will be given for every modules;
 ### Verilog Code
-Design of the sub main modules of risc-v will be build with the logic to implement it in a very simpler way.
+Design of the main modules of risc-v will be build with the logic to implement it in a very simpler way.
 ### Testbench
-This will test the various case scenario of your main design of the particluar sub module to ensure the correctness, range and fulfillment of every test cases given.
+This will test the various case scenario of your main design of the particluar main module to ensure the correctness, range and fulfillment of every test cases given.
 ### Simulation output
 The simulation will generate the waveform based on the test cases provided in testbench and also make ensure it is instatiating the suitable main design module in the testbench. It will check for errors in the main design and testbench, whether it be syntax, junk error, bit length error or logic flow error.
 ### Elaborated Design
-After the passing the simulation, if the code is meeting the expected ouput, it will show the elaborated design of the module created.
-
-
-
-
+After passing the simulation, if the code is meeting the expected ouput, it will show the elaborated design of the module created.
