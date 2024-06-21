@@ -8,7 +8,7 @@ This is an industry level tool, which will produce the gate level design, schema
 
 ## What to expect
 The instruction I-type, B-type, S-type snd J-type have been proposed. 
-This repository will picture out the main idea on various main block of RISC-V along with the excecution of each module in vivado.
+This repository will picture out the main idea on various main block of RISC-V along with the excecution of each module in Vivado.
 
 
 ## Architecture Design
@@ -32,11 +32,11 @@ The RISC-V contains the four essential blocks,
 #### ‣ [Instruction Memory](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Instruction%20Memory)
 #### ‣ [Register File](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Register%20File)
 #### ‣ [Data Memory](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Data%20Memory)
-This four blocks are the key componenets of the processor. But, to bluid the whole architecture it is not enough, you need the connecting components for the above which plays a greater role in selecting the data, to ensure data is being read or written to we need,
+This four blocks are the key componenets of the processor. But, to bluid the whole architecture it is not enough, you need the connecting components for the above which plays a greater role in selecting the data, to ensure data is being read or written to. We need,
 #### ‣ Multiplexers - 3 are required
 The count is 3, for selecting their desired selection line which are PCSrc, ALUSrc, Memwrite
 #### ‣ Adders - 2 are required
-The adder will increment the value. For PCPlus4 the previous input is added with four as an output to give the next input for program counter. And, for PCTarget the addition is between the ImmExt( output of Extend File) and PC input.
+The adder will increment the value. For PCPlus4 the previous input is added with four as an output to give the next input for program counter. And, for PCTarget the addition is between the ImmExt (output of Extend File) and PC input.
 #### ‣ Arithmetic logic unit
 #### ‣ ALU Control unit
 #### ‣ Main Decoder
@@ -50,7 +50,7 @@ All this combined together with the appropriate logic flow will give the archite
 ## What datapath does the load word, store word, and Branch equal word follow
 
 ### Load Word
-Step 1: The type of instruction used will determine the path for data to flow. To explain in simpler ways, the data will follow a path from the program counter at an initial address let's take 1000. It will give the instruction in machine code language after being fed into the isnstruction Memory.
+Step 1: The type of instruction used will determine the path for data to flow. To explain in simpler ways, the data will follow a path from the program counter at an initial address let's take 1000. It will give the instruction in machine code language after being fed into the instruction Memory.
 
 
 Step 2: The opcode and instruction used will excute path in a certain direction. To know which path to choose the multiplexer is been placed.
