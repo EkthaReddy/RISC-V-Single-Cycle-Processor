@@ -6,6 +6,12 @@ In this repository of RISC-V, you will get to know the main modules of the MIPS 
 Xilinx Vivado version 2023.1
 This is an industry level tool, which will produce the gate level design, schematic design and it can also implement the code in an FPGA kit by using bitstream generation.
 
+## Architecture Design
+![image](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/assets/152515939/a96949c0-6e89-426c-97c5-8d158f3afae8)
+
+## What I did
+The instruction I-type, B-type, S-type snd J-type have been proposed. 
+
 ## what are the main blocks in this Single cycle processor?
 The RISC-V contains the four essential blocks,
 #### ‣ Program Counter (PC)
