@@ -91,13 +91,13 @@ additionals are
 ## What does the repository contain?
 
 You can expect four things which will be given for every modules 
-### Verilog Code: 
+### Verilog Code
 Design of the sub main modules of risc-v will be build with the logic to implement it in a very simpler way.
-### Testbench: 
+### Testbench
 This will test the various case scenario of your main design of the particluar sub module to ensure the correctness, range and fulfillment of every test cases given.
-### Simulation output:
+### Simulation output
 The simulation will generate the waveform based on the test cases provided in testbench and also make ensure it is instatiating the suitable main design module in the testbench. It will check for errors in the main design and testbench, whether it be syntax, junk error, bit length error or logic flow error.
-### Elaborated Design:
+### Elaborated Design
 After the passing the simulation, if the code is meeting the expected ouput, it will show the elaborated design of the module created.
 
 
