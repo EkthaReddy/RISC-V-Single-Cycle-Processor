@@ -46,8 +46,11 @@ The count is 3, for selecting their desired selection line which are PCSrc, ALUS
 The adder will increment the value. For PCPlus4 the previous input is added with four as an output to give the next input for program counter. And, for PCTarget the addition is between the ImmExt (output of Extend File) and PC input.
 #### ‣ Arithmetic logic unit
 #### ‣ ALU Control unit
-#### ‣ Main Decoder
-#### ‣ ALU Decoder
+ALU Control unit, comprises of the, 
+
+- Main Decoder
+- ALU Decoder
+
 #### ‣ Extend File
 #### ‣ Datapath
 
