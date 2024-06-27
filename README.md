@@ -34,14 +34,15 @@ The RISC-V contains the four essential blocks,
 #### ‣ [Data Memory](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Data%20Memory)
 This four blocks are the key componenets of the processor. But, to bluid the whole architecture it is not enough, you need the connecting components for the above which plays a greater role in selecting the data, to ensure data is being read or written to. We need,
 #### ‣ Multiplexers - 3 are required
-- Multiplexer for PCSrc
-- Multiplexer for ALUSrc 
-- Multiplexer for MemWrite
+- [Multiplexer for PCSrc](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Multiplexer%20for%20PCSrc)
+- [Multiplexer for ALUSrc](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Multiplexer%20for%20ALUSrc)
+- [Multiplexer for ResultSrc](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/blob/main/RISC-V%20Main%20Modules%20Designs/Multiplexer%20for%20ResultSrc/Design.v)
 
-The count is 3, for selecting their desired selection line which are PCSrc, ALUSrc, MemWrite
+The count is 3, for selecting their desired selection line which are PCSrc, ALUSrc, ResultSrc.
 #### ‣ Adders - 2 are required
-- Adder for PCPlus4
-- Adder for PCTarget
+- [Adder for PCPlus4](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Adder%20for%20PCPlus4)
+- [Adder for PCTarget](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Adder%20for%20PCTarget)
+  
 The adder will increment the value. For PCPlus4 the previous input is added with four as an output to give the next input for program counter. And, for PCTarget the addition is between the ImmExt (output of Extend File) and PC input.
 #### ‣ Arithmetic logic unit
 #### ‣ ALU Control unit
