@@ -48,11 +48,11 @@ The adder will increment the value. For PCPlus4 the previous input is added with
 #### ‣ ALU Control unit
 ALU Control unit, comprises of the, 
 
-- Main Decoder
+- **[Main Decoder]**(https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Main%20Decoder)
 - ALU Decoder
 
 #### ‣ [Extend File](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Extend)
-#### ‣ Datapath
+#### ‣ [Datapath](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Data%20Path)
 
 All this combined together with the appropriate logic flow will give the architecture of MIPS.
 
