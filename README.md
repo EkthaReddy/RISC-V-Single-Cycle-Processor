@@ -44,7 +44,7 @@ The count is 3, for selecting their desired selection line which are PCSrc, ALUS
 - [Adder for PCTarget](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Adder%20for%20PCTarget)
   
 The adder will increment the value. For PCPlus4 the previous input is added with four as an output to give the next input for program counter. And, for PCTarget the addition is between the ImmExt (output of Extend File) and PC input.
-#### ‣ Arithmetic logic unit
+#### ‣ [Arithmetic logic unit](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Arithmetic%20Logic%20Unit)
 #### ‣ ALU Control unit
 ALU Control unit, comprises of the, 
 
