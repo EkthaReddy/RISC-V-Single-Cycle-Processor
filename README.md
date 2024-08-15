@@ -48,7 +48,7 @@ The adder will increment the value. For PCPlus4 the previous input is added with
 #### ‣ ALU Control unit
 ALU Control unit, comprises of the, 
 
-- **[Main Decoder]**(https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Main%20Decoder)
+- [**Main Decoder**](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Main%20Decoder)
 - ALU Decoder
 
 #### ‣ [Extend File](https://github.com/EkthaReddy/RISC-V-Single-Cycle-Processor/tree/main/RISC-V%20Main%20Modules%20Designs/Extend)
