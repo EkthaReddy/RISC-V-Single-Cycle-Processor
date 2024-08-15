@@ -4,6 +4,7 @@ In this repository of RISC-V, you will get to know the main modules of the MIPS 
 
 ## Software used
 Xilinx Vivado version 2024.1
+
 This is an industry level tool, which will produce the gate level design, schematic design and it can also implement the code in an FPGA kit by using bitstream generation.
 
 ## What to expect
