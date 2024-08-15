@@ -114,3 +114,5 @@ This will test the various case scenario of your main design of the particluar m
 The simulation will generate the waveform based on the test cases provided in testbench and also make ensure it is instatiating the suitable main design module in the testbench. It will check for errors in the main design and testbench, whether it be syntax, junk error, bit length error or logic flow error.
 ### Elaborated Design
 After passing the simulation, if the code is meeting the expected ouput, it will show the elaborated design of the module created.
+### Implemented Design
+When the synthesis and implementation is successful in vivado, it will produce an implemented design which can are implementable.
