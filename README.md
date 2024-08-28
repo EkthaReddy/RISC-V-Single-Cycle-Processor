@@ -96,11 +96,11 @@ The changes to be made are
 Follow the same data path till store word.
 additionals are
 
-- Perform substraction operation on SrcA and SrcB, if the result gives us zerothen add zero flag to show the results are obtained for beq instructions.
+- Perform substraction operation on SrcA and SrcB, if the result gives us zero then add zero flag to show the results are obtained for beq instructions.
 - ResultSrc and RD is disabled.
 - Calcualte the Target Address 
   PCTarget = PC input + ImmExt
-  the PCTarget is fed into the Program Counter by using multipler which 
+  the PCTarget is fed into the Program Counter by using multipler.
 
 
 
